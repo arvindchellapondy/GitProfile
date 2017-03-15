@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GitProfile</string>
+    <string name="menu_item_search">search</string>
+    <string name="no_search_suggestions">No search suggestions</string>
+    <string name="no_searched_users">No searched users</string>
+    <string name="type_in_tosearch">Type in to search</string>
+    <string name="service_failure_message">Unable to find the user profile. Please try again.</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="repositories">repositories</string>
+</resources>

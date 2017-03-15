@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/suggested_user_item_layout"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/suggested_user_item_layout_padding">
+
+    <zerobase.us.gitprofile.views.RoundedImageView
+        android:id="@+id/suggested_user_profile_image"
+        android:layout_width="@dimen/suggested_user_profile_image_width"
+        android:layout_height="@dimen/suggested_user_profile_image_height"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/suggested_user_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/suggested_user_detail_layout_margin_left"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/suggested_user_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/suggested_user_login_text_size"/>
+
+        <TextView
+            android:id="@+id/suggested_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/suggested_user_name_text_size"
+            android:layout_below="@+id/suggested_user_login"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

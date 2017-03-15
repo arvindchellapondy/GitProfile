@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searched_user_grid_item_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/searched_user_grid_item_layout_padding">
+
+    <zerobase.us.gitprofile.views.RoundedImageView
+        android:id="@+id/searched_user_grid_item_image"
+        android:layout_width="@dimen/searched_user_grid_item_image_width"
+        android:layout_height="@dimen/searched_user_grid_item_image_height"
+        android:layout_margin="@dimen/searched_user_grid_item_image_margin"
+        android:scaleType="centerCrop"
+        android:transitionName="profile_avatar" />
+
+    <TextView
+        android:id="@+id/searched_user_grid_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/searched_user_grid_item_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:ellipsize="none"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textSize="@dimen/searched_user_grid_item_name_size" />
+
+</RelativeLayout>

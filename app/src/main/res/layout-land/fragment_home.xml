@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zerobase.us.gitprofile.views.UsersView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/users_view_message_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/users_view_message_text_view_size"
+        android:layout_marginTop="@dimen/users_view_message_text_view_margin_top"
+        android:layout_marginLeft="@dimen/users_view_message_text_view_margin_left"
+        android:layout_marginRight="@dimen/users_view_message_text_view_margin_right"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_user_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:drawSelectorOnTop="true" />
+
+    <GridView
+        android:id="@+id/searched_users_grid_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/text1view"
+        android:gravity="center"
+        android:horizontalSpacing="0dip"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:drawSelectorOnTop="true"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/searched_users_loading_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+
+</zerobase.us.gitprofile.views.UsersView>
